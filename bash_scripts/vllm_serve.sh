@@ -6,6 +6,7 @@ vllm serve Qwen/Qwen3.5-2B \
   --language-model-only \
   --reasoning-parser qwen3 \
   --enable-prefix-caching \
+  --max-model-len 32768 \
   --gpu-memory-utilization 0.5 \
   --default-chat-template-kwargs '{"enable_thinking": false}' \
   --enable-auto-tool-choice \
